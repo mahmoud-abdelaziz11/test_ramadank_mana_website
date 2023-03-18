@@ -491,7 +491,6 @@ header nav ul li a {
 @media (max-width: 767px) {
   .plans .plans-content .plan {
     display: flex;
-    max-height: 145px;
   }
 }
 .plans .plans-content .plan img {
@@ -509,7 +508,7 @@ header nav ul li a {
 @media (max-width: 767px) {
   .plans .plans-content .plan img {
     width: 150px;
-    max-height: 146px;
+    height: 130px;
   }
 }
 .plans .plans-content .plan .text-content {
@@ -528,7 +527,7 @@ header nav ul li a {
 }
 /* End Plans Section */
 
-/*------------------------------------------------------------------ Start plan pages sperated html file*/
+/* Start plan pages */
 
 /* Start page-image */
 .page-image {
@@ -605,13 +604,20 @@ header nav ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 /*edf2f4 -- f8f9fa -- e9ecef -- dee2e6 -- edf2fb -- e7ecef -- ebf2fa-- e8f1f2*/
 .plan-section .task .inner {
-  border: 1px solid #ccc;
   border-radius: 6px;
-  margin-bottom: 5px;
+  max-height: 0;
+  overflow: hidden;
 }
+.show{
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  max-height: 10000px !important;
+}
+
 .plan-section .task .inner .sekr-bg-one {
   background-color: #ebf2fa;
   padding: 10px 0 5px;
@@ -650,12 +656,14 @@ header nav ul li a {
   font-size: 20px;
   font-weight: bold;
   box-shadow: 0px 0px 8px rgb(0 119 182 / 50%);
+  cursor: pointer;
 }
 .plan-section .task .inner .buttons .repeat-button {
   border: none;
   background-color: #ef233c;
   padding: 4px 6px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .plan-section .task .inner .buttons .repeat-button:hover {
   background-color: #d90429;
@@ -663,6 +671,7 @@ header nav ul li a {
 .plan-section .task .inner .buttons .repeat-button i {
   color: var(--section-color);
   font-size: 15px;
+  
 }
 .plan-section .tasks .text {
   background-color: rgb(36 95 150 / 60%);
@@ -671,6 +680,21 @@ header nav ul li a {
   border-radius: 6px;
   font-weight: bold;
   line-height: 1.7;
+}
+.task .outer i{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: .3s;
+}
+.icon-rotate{
+  transform: rotate(-90deg) !important;
+  -webkit-transform: rotate(-90deg) !important;
+  -moz-transform: rotate(-90deg) !important;
+  -o-transform: rotate(-90deg) !important;
+  -ms-transform: rotate(-90deg) !important;
 }
 @media (max-width: 767px) {
   .plan-section .tasks .text {
@@ -787,7 +811,7 @@ header nav ul li a {
 }
 /* End Contact Section */
 
-/*------------------------------------------------------------------ End plan pages sperated html file*/
+/* End plan pages */
 
 /* Start Animation */
 @keyframes bouncing {
