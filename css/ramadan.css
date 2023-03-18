@@ -491,6 +491,7 @@ header nav ul li a {
 @media (max-width: 767px) {
   .plans .plans-content .plan {
     display: flex;
+    max-height: 145px;
   }
 }
 .plans .plans-content .plan img {
@@ -508,7 +509,7 @@ header nav ul li a {
 @media (max-width: 767px) {
   .plans .plans-content .plan img {
     width: 150px;
-    height: 130px;
+    max-height: 146px;
   }
 }
 .plans .plans-content .plan .text-content {
@@ -527,7 +528,7 @@ header nav ul li a {
 }
 /* End Plans Section */
 
-/* Start plan pages */
+/*------------------------------------------------------------------ Start plan pages sperated html file*/
 
 /* Start page-image */
 .page-image {
@@ -786,7 +787,7 @@ header nav ul li a {
 }
 /* End Contact Section */
 
-/* End plan pages */
+/*------------------------------------------------------------------ End plan pages sperated html file*/
 
 /* Start Animation */
 @keyframes bouncing {
